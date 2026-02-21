@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Histoire</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Design spécifique à la timeline pour cette page */
+        .timeline-item {
+            text-align: left;
+            border-left: 4px solid #d63031;
+            padding-left: 20px;
+            margin-bottom: 0; /* Modifié pour s'aligner parfaitement avec l'image */
+            position: relative;
+            flex-grow: 1; /* Permet au texte de prendre l'espace à droite */
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -12px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 4px solid #d63031;
+            border-radius: 50%;
+        }
+        .date {
+            font-weight: bold;
+            color: #777;
+        }
+
+        /* NOUVEAU : Alignement de l'image à gauche et de la timeline à droite */
+        .etape-flex {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .etape-flex .polaroid-item {
+            margin: 0;
+            flex-shrink: 0;
+            width: 200px; /* Largeur de ton polaroid */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="histoire.html">Notre Histoire</a></li>
+            <li><a href="galerie.html">Nos Souvenirs</a></li>
+            <li><a href="raisons.html">20 Raisons</a></li>
+            <li><a href="lettre.html"> Ma lettre</a></li>
+            <li><a href="qst.html">TOP SECRET !</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Les grandes étapes de ces 20 mois</h2>
+
+        <div class="etape-flex">
+            <div class="polaroid-item">
+                <img src="images/miko1.jpg" alt="Description photo 1">
+                <div class="legende-pola">Miko chokbar ☀️</div>
+            </div>
+            
+            <div class="timeline-item">
+                <span class="date">Octobre 2023</span>
+                <h3>Le premier regard</h3>
+                <p>Le jour où on s'est rencontrés. J'étais tellement stressé mais tu étais magnifique. La première fois que
+                fois que je t'ai vue, j'étais absorbé par ton sourire et tes yeux.
+                Tout mon corps s'est figé, je ne savais plus quoi faire. Mon esprit était troublé, 
+                dans ma tête, tout avait changé en une seconde.
+                C'est comme si mon ame me disait que tu étais mon âme soeur, que tu étais la personne avec qui je devais êt
+                Je savais que j'étais deja sous ton charme, que j'étais tombé amoureux de toi dès le premier regard. Je ne </p>
+            </div>
+        </div>
+
+        <div class="etape-flex">
+            <div class="polaroid-item">
+                <img src="images/mzed3.jpg" alt="Notre premier date">
+                <div class="legende-pola">Notre premier date ☕</div>
+            </div>
+            <div class="timeline-item">
+                <span class="date">9 aout 2024</span>
+                <h3>Notre premier date</h3>
+                <p>Le jour où on a passé notre premier moment rien qu'à nous. Le jour où on a passé notre premier moment rien qu'à nous.
+Au Tepe, je t’ai attendue en stressant comme jamais, le cœur qui battait à cent à l’heure, les mains tremblantes… et quand je t’ai enfin vue, j’étais tellement heureux que j’avais du mal à tenir sur mes jambes. Je tremblais même en essayant de te mettre le bracelet que je t’avais offert. Chaque mot, chaque sourire avec toi ce jour-là me paraissait magique.
+ J’ai compris que je parlais enfin avec la personne dont je suis tombé amoureux.</p>
+            </div>
+        </div>
+
+        <div class="etape-flex">
+            <div class="polaroid-item">
+                <img src="images/mzed2.jpg" alt="Description photo 1">
+                <div class="legende-pola"> Mzed sous les étoiles, amoureux...</div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="date">Juillet 2024</span>
+                <h3>Le premier "Je t'aime"</h3>
+                <p>Sous les étoiles d’Istanbul, entre le ciel infini et les vagues du Bosphore, il n’y avait plus que toi e
+                     Assis sur ces rochers, j’ai compris que ce “je t’aime” n’était pas juste un mot… 
+                    c’était le début de quelque chose d’immense. Tout semblait si naturel, si parfait, si évident. </p>
+            </div>
+        </div>
+
+        <div class="etape-flex">
+            <div class="polaroid-item">
+                <img src="images/mzed4.jpg" alt="Premières vacances">
+                <div class="legende-pola">Nos vacances ✈️</div>
+            </div>
+            <div class="timeline-item">
+                <span class="date">27 janvier 2024</span>
+                <h3>Nos premières vacances ensemble</h3>
+                <p>Des souvenirs inoubliables créés loin de chez nous. Des souvenirs inoubliables créés loin de chez nous.
+Je t’ai rejoint à Istanbul, là où tu vivais ton Erasmus, et chaque instant était magique. 
+On a mangé ensemble, on s’est baladé dans les rues animées, 
+et c’est là-bas, au milieu de cette ville magnifique, que nous nous sommes tenus la main pour la première fois. 
+Traverser le Bosphore avec toi, sentir ta main dans la mienne, rire et découvrir la ville à tes côtés. 
+C’était une expérience incroyable, un moment que je n’oublierai jamais.</p>
+            </div>
+        </div>
+
+        <div class="etape-flex">
+            <div class="polaroid-item">
+                <img src="images/mzed5.jpg" alt="Premier anniversaire">
+                <div class="legende-pola">Joyeux anniversaire 🎂</div>
+            </div>
+            <div class="timeline-item">
+                <span class="date">2 janvier 2025</span>
+                <h3>Notre premier anniversaire ensemble</h3>
+                <p>Tu es venue chez moi ce jour-là et chaque instant avec toi était un vrai bonheur. 
+                    On a partagé le gâteau que tu m’avais acheté, si mignon, et j’ai adoré chaque bouchée autant que ta présence.
+                     Tu m’as offert un livre qui retrace nos moments passés ensemble et qui exprime ton amour pour moi. 
+                     Et pour la première fois, j’ai adoré mon anniversaire. C’était plus qu’une fête, c'est un souvenir gravé dans mon cœur à jamais.</p>
+            </div>
+        </div>
+
+        <div class="etape-flex">
+            <div class="polaroid-item">
+                <img src="images/photo.jpg" alt="Dessert de Miko">
+                <div class="legende-pola">Chef Miko 👨‍🍳</div>
+            </div>
+            <div class="timeline-item">
+                <span class="date">janvier 2025</span>
+                <h3>Premier dessert préparé par Miko</h3>
+                <p>J’ai mis tout mon cœur dans ce  Manyolya fait pour toi, pour te voir sourire à chaque bouchée ma mimi.</p>
+            </div>
+        </div>
+
+        <div class="etape-flex">
+            <div class="polaroid-item">
+                <img src="images/mzed6.jpg" alt="Deuxièmes vacances">
+                <div class="legende-pola">MZED sous la neige ❄️</div>
+            </div>
+            <div class="timeline-item">
+                <span class="date"> 17 février 2025</span>
+                <h3>Nos deuxièmes vacances ensemble</h3>
+                <p>Chaque coin de cette ville semblait nous appartenir un peu plus cette fois-là. 
+                    On a ri, parlé, partagé des secrets, et appris encore plus à nous connaître. 
+                    Traverser Istanbul avec toi, découvrir ses ruelles, ses cafés, ses couleurs un peu plus en détail c’était simplement EXCELLENT. 
+                    Mais le meilleur souvenir, c’était de te sentir près de moi, de sentir notre complicité grandir à chaque instant plus que jamais.</p>
+            </div>
+        </div>
+
+        <div class="etape-flex">
+            <div class="polaroid-item">
+                <img src="images/mzed7.jpg" alt="Retour Erasmus">
+                <div class="legende-pola">Enfin réunis ❤️</div>
+            </div>
+            <div class="timeline-item">
+                <span class="date">30 juin 2025</span>
+                <h3>Le retour d'Erasmus</h3>
+                <p>Tu es revenue, et je savais combien ça avait été difficile pour toi. 
+                    Ta vie là-bas, cette ville INCROYBALE ça te manquait, et je voyais à quel point tu y étais attachée. 
+                    Mais chaque jour passé ensemble rendait tout plus léger.
+                     Tu me disais souvent que je t’avais facilité le retour, que je t’avais aidée à te sentir moins triste et moi, je n’ai jamais été aussi heureux de simplement être là, à tes côtés, et de partager enfin notre quotidien et de te soutenir dans ta douleur.</p>
+            </div>
+        </div>
+
+        <div class="etape-flex">
+            <div class="polaroid-item">
+                <img src="images/mzed8.jpg" alt="Nos 1 an">
+                <div class="legende-pola">1 an déjà yipiii 🎉</div>
+            </div>
+            <div class="timeline-item">
+                <span class="date">22 juillet 2025</span>
+                <h3>Nos 1 an</h3>
+                <p>Une année entière de bonheur partagé, de rires et de complicité avec ma princesse d'amour.
+Chaque jour à tes côtés a été un cadeau, chaque sourire que tu m’offres une petite étoile dans mon ciel. Tu es la lune de mes nuits, le soleil de mes journées.
+Cette année m’a appris à t’aimer encore plus, à savourer chaque moment avec toi, et à rêver de tout ce qui nous attend.
+ Avec toi, le temps devient précieux la vie plus douce, et mon cœur léger. Merci d’être toi, merci de m'aimer. </p>
+            </div>
+        </div>
+
+        <div class="etape-flex">
+            <div class="polaroid-item">
+                <img src="images/mzed9.jpg" alt="Manger à midi">
+                <div class="legende-pola">MZED en mode pause dej' 🥪</div>
+            </div>
+            <div class="timeline-item">
+                <span class="date"> 2025/2026</span>
+                <h3>Manger ensemble à midi</h3>
+                <p>Depuis que tu es revenue, nos midis ensemble sont devenus des bulles de bonheur dans nos journées bien remplies. On se déconnecte, on mange, on rit, on se raconte tout, et rien que te voir me fait respirer. 
+                    Ces moments simples, mais précieux, me rappellent combien j’ai de la chance de partager ma vie avec toi.</p>
+            </div>
+        </div>
+
+        <div class="etape-flex">
+            <div class="polaroid-item">
+                <img src="images/mzed10.jpg" alt="Description photo 1">
+                <div class="legende-pola">Mzed en mode love ❤️</div>
+            </div>
+            <div class="timeline-item">
+                <span class="date">Aujourd'hui</span>
+                <h3>Nous</h3>
+                <p>Chaque instant passé avec toi n’est qu’un chapitre de ce que nous avons à vivre. 
+                    Je sais qu’il nous attend encore tant de rires, de découvertes, de mains entrelacées et de moments partagés.
+                     Avec toi, je veux continuer à écrire cette histoire, jour après jour, cœur contre cœur.</p>
+            </div>
+        </div>
+
+        <div class="etape-flex">
+            <div class="polaroid-item">
+                <img src="images/mzed11.jpg" alt="Projet Mzed">
+                <div class="legende-pola">L'avenir 💒</div>
+            </div>
+            <div class="timeline-item">
+                <span class="date">Pour le futur...</span>
+                <h3>PROJET MZED</h3>
+                <p>Chaque jour à tes côtés me montre que nous sommes capables de construire quelque chose de magnifique.
+                     Rires, rêves, défis. Tout devient plus doux et excitant quand on le vit ensemble. 
+                     Je sais que ce n’est que le début d’une aventure qui promet d’être exceptionnelle, et je veux la partager avec toi et seulement toi, main dans la main.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* --- style.css --- */
+
+/* Style global */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff0f5; /* Fond rose très pâle pour plus de douceur */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Le Menu de Navigation */
+nav {
+    background-color: #d63031; /* Rouge romantique */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: sticky; /* Le menu reste en haut quand on défile */
+    top: 0;
+    z-index: 100;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #ffb8b8;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+h1, h2 {
+    color: #d63031;
+    margin-bottom: 30px;
+}
+
+/* Boutons */
+.btn {
+    display: inline-block;
+    background-color: #d63031;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #b71540;
+}
+
+/* --- STYLE POUR LA PAGE RAISONS --- */
+.liste-raisons {
+    text-align: left;
+    padding: 0 20px;
+}
+.liste-raisons li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    line-height: 1.4;
+}
+.coeur-bullet {
+    color: #d63031;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* --- STYLE POUR LA PAGE GALERIE POLAROID --- */
+.galerie-pola {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Espace entre les polaroids */
+    padding: 20px;
+}
+
+.polaroid-item {
+    background: white;
+    padding: 15px 15px 40px 15px; /* Espace plus grand en bas pour le texte */
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.2);
+    transform: rotate(-3deg); /* Rotation initiale */
+    transition: all 0.4s ease; /* Animation fluide */
+    width: 220px;
+}
+
+/* Une photo sur deux tourne dans l'autre sens pour faire naturel */
+.polaroid-item:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+/* Au survol de la souris */
+.polaroid-item:hover {
+    transform: scale(1.1) rotate(0deg); /* Grossit et se remet droit */
+    z-index: 10; /* Passe au dessus des autres */
+    box-shadow: 10px 15px 30px rgba(0,0,0,0.3);
+}
+
+.polaroid-item img {
+    width: 100%; /* L'image prend toute la largeur du cadre */
+    height: 220px; /* Hauteur fixe pour uniformiser */
+    object-fit: cover; /* Recadre l'image sans la déformer */
+    border: 1px solid #eee;
+}
+
+.legende-pola {
+    font-family: 'Brush Script MT', 'Comic Sans MS', cursive; /* Police style écriture manuscrite */
+    font-size: 1.3em;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* Alignement image à gauche / texte à droite */
+.etape-flex {
+    display: flex;
+    align-items: flex-start; /* Aligne le haut de l'image avec le haut du texte */
+    gap: 30px; /* L'espace entre le polaroid et la ligne rouge */
+    margin-bottom: 40px;
+}
+
+.etape-flex .polaroid-item {
+    margin: 0; 
+    flex-shrink: 0; /* Empêche la photo de s'écraser si le texte est long */
+    width: 200px; /* Tu peux ajuster la taille de l'image ici si besoin */
+}
+
+.etape-flex .timeline-item {
+    margin-bottom: 0; /* Enlève la marge par défaut */
+    flex-grow: 1; /* Le texte prend tout l'espace restant à droite */
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Lettre pour Toi</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .lettre-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .rouleau {
+            width: 90%;
+            max-width: 650px;
+            height: 35px;
+            background: linear-gradient(to bottom, #8b5a2b, #d2b48c, #8b5a2b);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+            z-index: 2;
+            position: relative;
+        }
+
+        .papier {
+            width: 80%;
+            max-width: 580px;
+            background: linear-gradient(to bottom, #fdf5e6, #fff8dc, #fdf5e6); 
+            box-shadow: inset 0 0 30px rgba(139, 69, 19, 0.1), 0 5px 15px rgba(0,0,0,0.2);
+            color: #3e2723; 
+            font-family: 'Georgia', serif; 
+            font-size: 1.2em;
+            line-height: 1.8;
+            text-align: left;
+            
+            max-height: 0; 
+            padding: 0 40px; 
+            overflow: hidden; 
+            transition: max-height 3s ease-in-out, padding 3s ease-in-out; 
+            z-index: 1;
+        }
+
+        
+        .papier.deroule {
+            max-height: 2000px; 
+            padding: 40px 40px; 
+        }
+
+        .signature {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 1.5em;
+            text-align: right;
+            margin-top: 30px;
+            color: #d63031;
+        }
+
+        
+        .btn-magique {
+            background-color: #d63031;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 40px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+        .btn-magique:hover {
+            transform: scale(1.05);
+            background-color: #b71540;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="histoire.html">Notre Histoire</a></li>
+            <li><a href="galerie.html">Nos Souvenirs</a></li>
+            <li><a href="raisons.html">20 Raisons</a></li>
+            <li><a href="lettre.html">Ma Lettre</a></li> <li><a href="qst.html">TOP SECRET !</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" style="background: transparent; box-shadow: none;">
+        <h2>Un petit mot pour toi...</h2>
+        <p>J'ai quelque chose d'important à te dire.</p>
+
+        <button class="btn-magique" id="boutonLettre" onclick="ouvrirLettre()">📜 Dérouler la lettre</button>
+
+        <div class="lettre-container">
+            <div class="rouleau"></div>
+            
+            <div class="papier" id="texteLettre">
+                <p>Mon amour,</p>
+                <p>Si tu lis ceci, c'est que tu as parcouru les étapes de nos 20 premiers mois. Je voulais t'écrire ces quelques mots pour figer dans le temps ce que je ressens pour toi.</p>
+                <p>Depuis que tu es entrée dans ma vie, tout a pris une autre saveur. Chaque moment passé à tes côtés, même les plus simples, devient un souvenir précieux. Tu es ma confidente, ma complice, ma moitié.</p>
+                <p>Je repense à notre premier regard, à notre premier "je t'aime" sous les étoiles, et je me dis que je suis incroyablement chanceux de t'avoir. J'ai hâte de découvrir ce que l'avenir nous réserve avec notre projet Mzed et tout le reste.</p>
+                <p>Merci pour ta patience, pour ton sourire qui illumine mes journées, et pour l'amour que tu me donnes au quotidien. Je te promets de toujours faire de mon mieux pour te rendre aussi heureuse que tu me rends.</p>
+                <p>Je pense sans cesse à nous ces derniers jours. Tout ce qu’on a construit, aux moments où on s’est compris sans même parler, aux épreuves qu’on a déjà traversées, aux promesses que l’on s’est faites. Et ça me fait réaliser qu’on n’est pas faits pour s’éloigner quand ça devient difficile entre nous.
+</p>
+<p>Je sais que ce que tu vis te chamboule. Je comprends que tu puisses te refermer, regretter de t’être ouverte, ou même me trouver inutile parfois. Mais je veux seulement être à tes côtés. Je ne peux pas régler ce que tu traverses, pourtant je reste. Je suis là, même si aujourd’hui tu ne le vois pas. Je suis celui qui ne part pas, surtout quand c’est compliqué, parce que tu comptes plus que n’importe qui pour moi.
+
+</p>
+<p>Souvent, je ne trouve pas les bons mots, ni les bonnes choses à faire. Mais ça ne veut pas dire que je ne ressens rien. Au contraire, je tiens tellement à toi que j’ai peur de mal faire, de dire quelque chose qu’il ne faut pas.</p>
+<p>Je ne veux pas que la douleur crée une distance entre nous. Je sais que te protéger en me repoussant peut sembler plus simple sur le moment, mais au fond ça nous rend encore plus seuls. On a déjà partagé tellement de choses fortes. Ce serait dommage d’abandonner quand la vie devient plus dure. Ce n’est pas le moment de se lâcher. C’est le moment d’être une équipe et d’affronter tout ça ensemble. Je ne suis pas ton ennemi, je suis ton allié.</p>
+<p>Je ne te demande pas d’aller bien. Je ne te demande pas d’être forte. C’est normal d’avoir des moments de faiblesse. Je te demande seulement de ne pas me fermer la porte, de me laisser la possibilité d’être là pour toi.</p>
+<p>Je ne suis pas parfait, je ne suis pas un sauveur. Mais je suis là pour être ton partenaire de vie. Et je le resterai, si tu me laisses cette place. 💛</p>
+<p><p>Joyeux 20 mois à nous.</p></p>
+                <div class="signature">
+                    Je t'aime infiniment,<br>
+                    Ton Miko ❤️
+                </div>
+            </div>
+
+            <div class="rouleau" id="rouleauBas"></div>
+        </div>
+
+    </div>
+
+    <script>
+        function ouvrirLettre() {
+            var papier = document.getElementById("texteLettre");
+            var bouton = document.getElementById("boutonLettre");
+
+            papier.classList.add("deroule");
+            bouton.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
